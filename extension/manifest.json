@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Search with GPT",
+  "version": "1.0",
+  "description": "Search highlighted text with GPT",
+  "permissions": [
+    "contextMenus",
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup/popup.html"
+  },
+  "host_permissions": [
+    "http://localhost:5000/*"
+  ]
+}
